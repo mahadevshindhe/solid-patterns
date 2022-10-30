@@ -1,0 +1,20 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class InputProcess {
+    public static Pair process() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        String firstNumber = scanner.nextLine();
+
+        System.out.println("Enter the second number: ");
+        String secondNumber = scanner.nextLine();
+
+        Pair pair = new Pair(firstNumber, secondNumber);
+
+        scanner.close();
+
+        return pair;
+    }
+}
