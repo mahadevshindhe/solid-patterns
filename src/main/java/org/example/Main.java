@@ -2,10 +2,13 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Vehicle v = new PetrolCar("Toyota", 3);
+        RotationTree tree = new BalancedTree();
 
-        v.speedUp();
-        v.slowDown();
-        v.fuel();
+        tree.insert();
+        tree.delete();
+        tree.traverse();
+        tree.leftRotation();
+        tree.rightRotation();
+
     }
 }
