@@ -1,5 +1,11 @@
-package org.example;public class Main {
+package org.example;
+
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Vehicle v = new PetrolCar("Toyota", 3);
+
+        v.speedUp();
+        v.slowDown();
+        v.fuel();
     }
 }
