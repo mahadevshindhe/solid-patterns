@@ -1,5 +1,8 @@
-package org.example;public class Main {
+package org.example;
+
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Person person = new Person.Builder("Kevin", "kevin@gmail.com").build();
+        System.out.println(person);
     }
 }
