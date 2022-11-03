@@ -1,5 +1,10 @@
-package org.example;public class Main {
+package org.example;
+
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        int[] nums = {1, 5, 3, -2, 10, 12, 8, 6, 5};
+
+        Algorithm sorting = new SelectionSort(nums);
+        sorting.sort();
     }
 }
